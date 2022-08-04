@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form {
+            width: 200px;
+            height: 250px;
+            background: lightgrey;
+            text-align: center;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 5px 5px;
+            background: #AD133A;
+            color: white;
+        }
+        button:hover {
+        background: #4c2827;
+        border-bottom-color: #111;
+        }
+        h3 {
+            background: #1F030C;
+            color: white;
+            border-radius: 10px;        
+        }
+        .bx {
+            width: 200px;
+            height: 80px;
+            background: whitesmoke;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tip Calculator</h2>
+    <form>
+        <h3>Tip Calculator</h3>
+        <div class="bx">
+            <p id="total">$</p>
+        </div>
+        <input id="bill" placeholder="Bill Amount">
+        <select name="tip" id="tip">
+            <option disabled selected value="0">Amount</option>
+            <option value=".10">10%</option>
+            <option value=".15">15%</option>
+            <option value=".20">20%</option>
+            <option value=".30">30%</option>
+        </select>
+        <button onclick="total();" id="btn" type="button">Total</button>
+    
+    </form>
+    
+    <script src="main.js"> 
+    </script>
+</body>
+</html>
